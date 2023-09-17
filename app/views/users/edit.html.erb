@@ -1,9 +1,2 @@
-<%= form_with model: @user do |user_form|%>
-<%= user_form.label :email, "Email:"%> <br>
-<%= user_form.email_field :email, placeholder: "example@example.com", label: "khoadz"  %> <br>
-<%= user_form.label :username, "Username:" %> <br>
-<%= user_form.text_field :username %> <br>
-<%= user_form.label :password, "Password:" %> <br>
-<%= user_form.password_field :password %> <br>
-<%= user_form.submit "Create User" %> <br>
-<% end %>
+<h1>Edit User Form</h1>
+<%= render partial: 'user' %>
